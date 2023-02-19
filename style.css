@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(34,193,195);
+  background: linear-gradient(347deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);}
+  .pw-container{
+      background-color: rgb(228, 117, 27);
+      width: 400px;
+      box-shadow: 0 4px 10px rgba(0 0 0 /60);
+  }
+  .pw-header{
+    padding: 1rem;
+  }
+
+  .pw{
+    width: 100%;
+    height :70px;
+	text-align:center;
+	background: rgb(238,185,70);
+background: linear-gradient(229deg, rgba(238,185,70,1) 0%, rgba(253,187,45,1) 100%);    display: flex;
+	box-shadow: 4px 10px 10px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+	position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .pw button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow: 3px 5px 5px rgba(0,0,0,0.7);
+	transform: translateY(50%);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	opacity: 0;
+	border-radius: 20px;
+	background-color: #ffb937;
+	padding: 0.25rem 1rem;
+	color: #000;
+	font-family: inherit;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+  }
+  .pw:hover button{
+	opacity: 1;
+	transform: translateY(-60%);
+  }
+
+  .pw-body {
+    padding: 0 1rem 1rem;
+}
+  .form-control{
+	color: #eee;
+    display: flex;
+    justify-content: space-between;
+	margin: 0.75rem;
+  }
+  .form-control label, .form-control input{
+	text-shadow: 0 5px 5px rgba(0, 0, 0, .50);
+  }
+
+  .generate{
+	display: block;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;	
+	padding: 1rem;
+	background: linear-gradient(to right, rgb(196, 124, 16) 50%, white 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	color: #2e2d2d;
+	font-weight: bold;
+	margin-top: 1rem;
+	border-radius: 20px;
+	transition: all 0.5s ease-out;
+}
+.generate:hover{
+	  box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+	background-position:left bottom ;
+	color: #eee;
+  }
